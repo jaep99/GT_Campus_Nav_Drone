@@ -79,9 +79,12 @@ Go into Raspberry Pi Software Configuration Tool
 Interface Options > Serial Port
 
 "Would you like a login shell to be accessible over serial?"
-  > <No>
+
+  \> \<No\>
+  
 "Would you like the serial port hardware to be enabled?"
-  > <Yes>
+
+  \> \<Yes\>
 
 ### Disable Bluetooth
 
