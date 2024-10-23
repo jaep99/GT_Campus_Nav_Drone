@@ -108,7 +108,7 @@ Save and Exit
 
 # Run Pixhawk With Pi
 
-    mavproxy.py -- master=/dev/ttyAMA0
+    mavproxy.py --master=/dev/ttyAMA0
     
 
 
