@@ -141,6 +141,9 @@ Save and Exit
 | `terrain check LAT LON`    | Get terrain height at specified location                        |
 | `formatsdcard`             | Formats SD card                                                 |
 
-    
+
+# AdHoc Network Setup
+
+# SSH Setup to Drone (Raspberry PI)
 
 
