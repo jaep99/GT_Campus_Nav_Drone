@@ -142,7 +142,8 @@ Save and Exit
 | `formatsdcard`             | Formats SD card                                                 |
 
 
-# AdHoc Network Setup
+# AdHoc Network Setup (Future Plan)
+Drone(PI) and Laptop(GCS) will be connected via mobile hotspot
 
 # SSH Setup to Drone (Raspberry PI)
 Make sure to enable SSH configuration
