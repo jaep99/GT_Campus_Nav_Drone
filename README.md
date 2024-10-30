@@ -145,5 +145,13 @@ Save and Exit
 # AdHoc Network Setup
 
 # SSH Setup to Drone (Raspberry PI)
+Make sure to enable SSH configuration
+
+    sudo raspi-config
+
+Obtain IP address and SSH into it
+
+    hostname -I
+    ssh (device_name)@(obtained_ip_address)
 
 # Aruco Maker Precision Landing
