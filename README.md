@@ -52,7 +52,7 @@ To override use:
 However, using Python Virtual Environment is RECOMMENDED.
 This isolates Python environment from the system and allows installing packages without affecting system level packages.
 
-Instal virtualenv
+Install virtualenv
 
     sudo apt-get install python3-virtualenv
     
