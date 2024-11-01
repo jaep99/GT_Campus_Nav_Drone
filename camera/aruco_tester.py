@@ -11,7 +11,7 @@ import sys
 width=640
 height=480
 
-# Picamera2 ?? ??
+# Picamera2
 picam2 = Picamera2()
 preview_config = picam2.create_preview_configuration(
     main={"format": 'RGB888',
@@ -54,17 +54,16 @@ counter=0
 counter=float(counter)
 start_time=time.time()
 
-# 3D ??? ??
+# 3D
 objPoints = np.array([[-marker_size/2, marker_size/2, 0],
                      [marker_size/2, marker_size/2, 0],
                      [marker_size/2, -marker_size/2, 0],
                      [-marker_size/2, -marker_size/2, 0]], dtype=np.float32)
 
 while time.time()-start_time<seconds:
-    # ??? ?? ? ??
     frame = picam2.capture_array()
     
-    # BGR? ?? (OpenCV? BGR ??? ??)
+    # BGR
     frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
     
     gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -74,7 +73,7 @@ while time.time()-start_time<seconds:
         print("Found these IDs in the frame:")
         print(ids)
         if ids[0] == id_to_find:
-            # ??? solvePnP ??
+            # solvePnP
             success, rvec, tvec = cv2.solvePnP(objPoints, 
                                               corners[0], 
                                               cameraMatrix, 
@@ -90,7 +89,6 @@ while time.time()-start_time<seconds:
                 print("")
                 
                 if viewVideo:
-                    # ??? ? ???
                     cv2.aruco.drawDetectedMarkers(frame, corners)
                     cv2.drawFrameAxes(frame, cameraMatrix, cameraDistortion, rvec, tvec, marker_size/2)
     else:
@@ -98,7 +96,6 @@ while time.time()-start_time<seconds:
         print("")
 
     if viewVideo:
-        # ??? ??
         cv2.imshow('frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
