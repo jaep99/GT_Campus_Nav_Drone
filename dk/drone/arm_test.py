@@ -27,8 +27,7 @@ def arm():
 		print("Waiting for vehicle to become armed.")
 		time.sleep(1)
 	print("Look out! Virtual props are spinning!!")
-        time.sleep(.5)
-
+	time.sleep(.5)
 	return None
 
 ########CONTROL DRONE
