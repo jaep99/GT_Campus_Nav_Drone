@@ -155,4 +155,6 @@ Obtain IP address and SSH into it
     hostname -I
     ssh (device_name)@(obtained_ip_address)
 
+# Camera Calibration
+
 # Aruco Maker Precision Landing
