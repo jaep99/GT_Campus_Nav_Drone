@@ -160,3 +160,5 @@ Obtain IP address and SSH into it
 <br>To calibrate the camera on drone, please refer to [Calibration](https://github.com/jaep99/video2calibration).
 
 # Aruco Maker Precision Landing
+
+<br>Using aruco_72.PNG for current single Aruco landing implementation.
