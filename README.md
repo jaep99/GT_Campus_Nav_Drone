@@ -155,4 +155,10 @@ Obtain IP address and SSH into it
     hostname -I
     ssh (device_name)@(obtained_ip_address)
 
+# Camera Calibration
+
+<br>To calibrate the camera on drone, please refer to [Calibration](https://github.com/jaep99/video2calibration).
+
 # Aruco Maker Precision Landing
+
+<br>Using aruco_72.PNG for current single Aruco landing implementation.
