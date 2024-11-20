@@ -159,6 +159,19 @@ Obtain IP address and SSH into it
 
 <br>To calibrate the camera on drone, please refer to [Calibration](https://github.com/jaep99/video2calibration).
 
+# Satefy Check Before Testing Features
+
+Drone Arming Test
+<br>Run the following script to test if the drone arms successfully:
+
+    python arm_test.py
+
+Run the following script to test if the drone can take off and land:
+<br>By default, the drone will take off to a basic altitude of 1m. You can specify a target altitude within the command.
+    
+    python takeoff_and_land.py (target altitude)
+    
 # Aruco Maker Precision Landing
 
 <br>Using aruco_72.PNG for current single Aruco landing implementation.
+
