@@ -105,11 +105,11 @@ comment out what is already under [all] and add:
 
 Save and Exit
 
-# Run Pixhawk With Pi
+## Run Pixhawk With Pi
 
     mavproxy.py --master=/dev/ttyAMA0
 
-# MAVProxy Command Reference
+## MAVProxy Command Reference
 
 | Command                   | Description                                                      |
 |----------------------------|------------------------------------------------------------------|
@@ -142,10 +142,10 @@ Save and Exit
 | `formatsdcard`             | Formats SD card                                                 |
 
 
-# AdHoc Network Setup (Future Plan)
+## AdHoc Network Setup (Future Plan)
 Drone(PI) and Laptop(GCS) will be connected via mobile hotspot
 
-# SSH Setup to Drone (Raspberry PI)
+## SSH Setup to Drone (Raspberry PI)
 Make sure to enable SSH configuration
 
     sudo raspi-config
@@ -155,11 +155,11 @@ Obtain IP address and SSH into it
     hostname -I
     ssh (device_name)@(obtained_ip_address)
 
-# Camera Calibration
+## Camera Calibration
 
 <br>To calibrate the camera on drone, please refer to [Calibration](https://github.com/jaep99/video2calibration).
 
-# Satefy Check Before Testing Features
+## Satefy Check Before Testing Features
 
 Drone Arming Test
 <br>Run the following script to test if the drone arms successfully:
@@ -171,7 +171,7 @@ Run the following script to test if the drone can take off and land:
     
     python takeoff_and_land.py (target altitude)
     
-# Aruco Maker Precision Landing
+## Aruco Maker Precision Landing
 
 <br>Using aruco_72.PNG for current single Aruco landing implementation.
 
