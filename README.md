@@ -169,8 +169,8 @@ Drone Arming Test
 Run the following script to test if the drone can take off and land:
 <br>By default, the drone will take off to a basic altitude of 1m. You can specify a target altitude within the command.
     
-    python takeoff_and_land.py (target altitude)
-    
+    python takeoff_and_land.py (ex. --altitude 2)
+
 ## Aruco Maker Precision Landing
 
 <br>Using aruco_72.PNG for current single Aruco landing implementation.
