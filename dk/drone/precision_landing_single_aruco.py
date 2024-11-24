@@ -177,7 +177,15 @@ def lander():
         print("First run of lander!!")
         first_run = 1
         start_time = time.time()
+
+    # GPS Informations
+    lat = vehicle.location.global_relative_frame.lat
+    lon = vehicle.location.global_relative_frame.lon
+    alt = vehicle.location.global_relative_frame.alt
+    velocity = vehicle.velocity
     
+    print(f"GPS: pos=({lat:.6f}, {lon:.6f}), alt={alt:.1f}m, vel=({velocity[0]:.1f}, {velocity[1]:.1f}, {velocity[2]:.1f})m/s")
+
     frame = picam2.capture_array()
     frame, marker_found, x_ang, y_ang = detect_and_process_marker(frame)
     
