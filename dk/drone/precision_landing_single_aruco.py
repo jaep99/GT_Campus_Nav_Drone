@@ -24,7 +24,7 @@ viewVideo = True  # Can be overridden by command line argument
 # Aruco Setup
 id_to_find = 72
 marker_size = 20  # cm
-takeoff_height = 8
+takeoff_height = 5
 velocity = 0.5
 
 # Initialize Camera
