@@ -3,8 +3,8 @@ Fall 2024 Capstone Design Project
 
 S31-Autonomous GT Campus Navigation Drone
 
-<br>Related Repos
-<br>[Drone_Sim](https://github.com/jaep99/Drone_Sim)
+### Related Repos
+[Drone_Sim](https://github.com/jaep99/Drone_Sim)
 <br>[Path planning and trajectory generation algorithm](https://github.com/jaep99/Path_Planning_Test)
 
 # Raspberry Pi 5 to Pixhawk Connection Setup
